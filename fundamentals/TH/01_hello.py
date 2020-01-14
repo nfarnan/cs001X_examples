@@ -19,3 +19,6 @@ line2
 	line3"""
 
 print(text_data)
+
+print("a", "b", "c", end="!!", sep="$$$")
+print("d", "e", "f", sep="@")
