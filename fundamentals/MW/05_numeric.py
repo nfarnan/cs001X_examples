@@ -74,3 +74,13 @@ print(cur)
 # Order of operations
 complicated = 16 - 2 * 6 / 3 + 1
 print(complicated)
+
+# increment
+cur = 5
+cur = cur + 1
+cur = cur + 1
+cur = cur + 5
+cur += 5
+cur -= 5
+cur *= 10
+print(cur)
