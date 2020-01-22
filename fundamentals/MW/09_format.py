@@ -29,4 +29,4 @@ formatted = "!" + format(10, ">15d") + "!"
 print(formatted)
 
 # all together
-print(format(7.555, "@^10,.2f"))
+print(format(7.5555, "@^10,.2f"))
