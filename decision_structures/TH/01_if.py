@@ -1,8 +1,12 @@
-an_int = 51
+an_int = 7
 
 if an_int < 10:
 	# do this
 	print("value is less than 10!")
-	print("this also get printed in if block")
+	print("this will also get printed in first if block")
 
-print("out of block")
+	if an_int > 5:
+		print("value is also greater than 5!")
+		print("this is printed from second (nested) if block")
+
+print("out of block(s)")
