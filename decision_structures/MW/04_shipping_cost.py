@@ -2,9 +2,10 @@
 weight = float(input("How much does the package weigh? "))
 
 # check weight
-#if weight <= 0:
-#	print("Invalid weight entered, you jerk")
-if 0 <= weight < 2:
+if weight <= 0:
+	print("Invalid weight entered, you jerk")
+	total = None
+elif weight < 2:
 	# <2lbs: $5
 	total = 5
 elif weight < 6:
@@ -17,6 +18,8 @@ else:
 	# over 10lbs: $16 + $1/lb over 10
 	total = 16 + (weight - 10)
 
-# output resulting cost
-ftotal = format(total, ".2f")
-print("The cost of shipping is $", ftotal, ".", sep="")
+if total != None:
+	# output resulting cost
+	ftotal = format(total, ".2f")
+	print("The cost of shipping is $", ftotal, ".", sep="")
+
