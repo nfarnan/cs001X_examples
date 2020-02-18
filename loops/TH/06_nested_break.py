@@ -11,6 +11,8 @@ while i < 3:
 		while k < 3:
 			print("Starting third...")
 			break
+			# will cause an infinite loop
+			#continue
 			print("Third!!!")
 
 			k += 1
