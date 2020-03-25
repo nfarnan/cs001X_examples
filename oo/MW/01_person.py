@@ -13,6 +13,9 @@ class Person:
 	def addAlias(self, alias):
 		self.names.append(alias)
 
+	def becomeStudent(self):
+		self.isStudent = True
+
 	def __str__(self):
 		return self.names[0]
 
@@ -26,11 +29,18 @@ class Person:
 		return rv
 
 a = Person("Alice", 30)
-a_string = str(a)
-print(a.__str__())
-print(repr(a))
-a_representation = a.__repr__()
-print(a)
-print(a_string)
-print(a_representation)
+
+print(a.names)
+a.isStudent = False
+
+print(a.isStudent)
+
+#a_string = str(a)
+#print(a.__str__())
+#print(repr(a))
+#a_representation = a.__repr__()
+#print(a)
+#print(a_string)
+#print()
+#print(a_representation)
 
