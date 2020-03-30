@@ -31,6 +31,10 @@ class Person:
 a = Person("Alice", 30)
 a.setAge()
 
+print(a.getAge())
+# Cannot access private attribute outside the class
+#print(a.__age)
+
 # BAD! creates second, public attribute also named __age
 a.__age = 45
 # don't do this

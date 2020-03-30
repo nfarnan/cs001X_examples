@@ -4,7 +4,7 @@ class Person:
 		self.__age = l_age
 	
 	def display(self):
-		print("Names:", self.__name)
+		print("Name:", self.__name)
 		print("Age:", self.__age)
 
 	def setAge(self):
@@ -12,6 +12,9 @@ class Person:
 
 	def getAge(self):
 		return self.__age
+
+	def getName(self):
+		return self.__name
 
 	def __str__(self):
 		return self.__name
@@ -27,3 +30,24 @@ class Person:
 
 def print_person(a_person):
 	a_person.display()
+
+def main():
+	print("Starting tests for Person...")
+	a = Person("Alice", 30)
+	a.display()
+	print()
+	print(a.getAge())
+	print()
+	print(a.getName())
+	print()
+	print(a)
+	print()
+	print(repr(a))
+	print()
+
+	a.setAge()
+	print(repr(a))
+	print("DONE testing Person!")
+
+if __name__ == "__main__":
+	main()
