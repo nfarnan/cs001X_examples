@@ -14,9 +14,9 @@ class Student(Person):
 
 	def __repr__(self):
 		rv = "Student("
-		rv += self.name
+		rv += self.getName()
 		rv += ", "
-		rv += str(self.age)
+		rv += str(self.getAge())
 		rv += ", "
 		rv += str(self.__classes)
 		rv += ")"
