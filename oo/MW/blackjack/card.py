@@ -1,8 +1,8 @@
 # valid suits: "H", "D", "S", "C"
 class Card:
-	def __init__(self, suit, value):
-		self.suit = suit
+	def __init__(self, value, suit):
 		self.value = value
+		self.suit = suit
 
 	def getColor(self):
 		if self.suit == "H" or self.suit == "D":
@@ -10,10 +10,13 @@ class Card:
 		else:
 			return "black"
 
+	def getValue(self):
+		return self.value
+
 	def __str__(self):
-		return self.suit + str(self.value)
+		return str(self.value) + self.suit
 
 	def __repr__(self):
-		rv = "Card(\"" + self.suit + "\", "
-		rv += str(self.value) + ")"
+		rv = "Card(\"" + str(self.value) + "\", "
+		rv += self.suit + ")"
 		return rv

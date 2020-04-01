@@ -1,15 +1,13 @@
 import random
 from card import Card
-
-SUITS = ["H", "C", "D", "S"]
-VALS = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"]
+import util
 
 class Deck:
 	def __init__(self):
 		self.cards = []
-		for suit in SUITS:
-			for val in VALS:
-				self.cards.append(Card(suit, val))
+		for suit in util.SUITS:
+			for val in util.VALS:
+				self.cards.append(Card(val, suit))
 
 	def getLength(self):
 		return len(self.cards)
