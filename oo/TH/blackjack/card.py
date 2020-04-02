@@ -15,6 +15,9 @@ class Card:
 		else:
 			return "black"
 
+	def getValue(self):
+		return self.value
+
 	def __str__(self):
 		return str(self.value) + self.suit
 
